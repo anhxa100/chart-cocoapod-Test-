@@ -22,19 +22,32 @@
                                 <rect key="frame" x="20" y="20" width="728" height="512"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mac-Ro-UZ3">
-                                <rect key="frame" x="361" y="729" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="random:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnA-TK-rJf"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="jF5-CP-Ncn">
+                                <rect key="frame" x="120" y="694" width="528" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UA4-Bp-RWY">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mac-Ro-UZ3">
+                                        <rect key="frame" x="482" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="random:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnA-TK-rJf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jF5-CP-Ncn" secondAttribute="bottom" constant="300" id="02O-3J-byy"/>
                             <constraint firstItem="iYQ-C8-FjJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Tv-U1-8n6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jF5-CP-Ncn" secondAttribute="trailing" constant="120" id="Qr9-b7-yh4"/>
                             <constraint firstItem="iYQ-C8-FjJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/2" id="fdQ-Ve-4Zo"/>
+                            <constraint firstItem="jF5-CP-Ncn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="kLm-iD-x36"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iYQ-C8-FjJ" secondAttribute="trailing" constant="20" id="mfn-Le-IIi"/>
                             <constraint firstItem="iYQ-C8-FjJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p8R-nw-dRx"/>
                         </constraints>

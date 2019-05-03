@@ -10,7 +10,9 @@ import UIKit
 import Charts
 
 class ViewController: UIViewController {
-
+    
+    
+    
     @IBOutlet weak var barChartline: BarChartView!
     
     override func viewDidLoad() {
@@ -19,7 +21,8 @@ class ViewController: UIViewController {
         setChartValues()
         // Do any additional setup after loading the view.
     }
-
+    
+   
     @IBAction func random(_ sender: UIButton) {
         let count = Int(arc4random_uniform(20) + 3)
         setChartValues(count)
@@ -35,7 +38,7 @@ class ViewController: UIViewController {
         
         self.barChartline.data = data
         
+   
     }
-
+    
 }
-
