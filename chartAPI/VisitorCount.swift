@@ -11,7 +11,7 @@ import RealmSwift
 
 class VisitorCount: Object {
     @objc dynamic var date: Date = Date()
-   @objc  dynamic var count: Int = Int(0)
+    @objc  dynamic var count: Int = Int(0)
     
     
     func save() {

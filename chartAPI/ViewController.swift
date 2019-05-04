@@ -68,7 +68,7 @@ class ViewController: UIViewController {
             let dataEntry = BarChartDataEntry(x: Double(timeIntervalForDate), y: Double(visitorCounts[i].count))
             dataEntries.append(dataEntry)
         }
-        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Visitor Count")
+        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Hoang Label")
         let chartData = BarChartData(dataSet: chartDataSet)
         barChartline.data = chartData
         
