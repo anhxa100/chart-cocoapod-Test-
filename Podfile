@@ -7,4 +7,5 @@ target 'chartAPI' do
 
   # Pods for chartAPI
 pod ‘Charts’
+pod 'RealmSwift'
 end
