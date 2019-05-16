@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(Realm.Configuration.defaultConfiguration.fileURL)
         axisFormatDelegate = self
         updateChartWithData()
         //        setChartValues()
@@ -70,6 +71,8 @@ class ViewController: UIViewController {
         }
         let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Hoang Label")
         let chartData = BarChartData(dataSet: chartDataSet)
+        
+        
         barChartline.data = chartData
         
         // thiet lap che do xem bang
